@@ -1,0 +1,25 @@
+{
+  "name": "learning-jquery",
+  "version": "1.0.0",
+  "description": "jQuery demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmee/learning-jQuery.git"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "author": "niki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmee/learning-jQuery/issues"
+  },
+  "homepage": "https://github.com/dmee/learning-jQuery#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

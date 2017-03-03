@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery prop</title>
+</head>
+
+<body>
+    <div class="box">
+        <label>
+            <input class="check_ipt_01" type="checkbox" checked="checked" />我是一个傲娇的复选框</label>
+        <label>
+            <input class="check_ipt_02" type="checkbox" />我是的复选框老二</label>
+    </div>
+    <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // 获取属性值
+        console.info($('.box').prop('class')); // box
+
+        // 设置自定义属性，值类型为字符串
+        $('.box').prop('cus_attr', 'custom value');
+        console.info($('.box').prop('cus_attr')); // custom value
+
+        // 设置自定义属性，值类型为非字符串
+        $('.box').prop('cus_attr', [1, 2, 3, 4]);
+        console.info($('.box').prop('cus_attr')); // [1, 2, 3, 4]
+
+        // 获取复选框的值
+        console.info($('.check_ipt_01').prop('checked')); // true
+        console.info($('.check_ipt_02').prop('checked')); // false
+
+    });
+    </script>
+</body>
+
+</html>
